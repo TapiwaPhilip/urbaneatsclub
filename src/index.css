@@ -230,3 +230,51 @@
 .pattern-bg {
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a9bf0' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* New gradient backgrounds */
+.bg-gradient-blue-purple {
+  background: linear-gradient(135deg, #e0f2fe 0%, #e5deff 100%);
+}
+
+.bg-gradient-orange-yellow {
+  background: linear-gradient(135deg, #fef5ed 0%, #fef7cd 100%);
+}
+
+.bg-gradient-green-blue {
+  background: linear-gradient(135deg, #f0f9f4 0%, #e0f2fe 100%);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(90deg, hsla(24, 100%, 95%, 1) 0%, hsla(341, 100%, 95%, 1) 100%);
+}
+
+.bg-soft-food {
+  background-color: rgba(242, 101, 24, 0.05);
+}
+
+.bg-soft-urban {
+  background-color: rgba(26, 155, 240, 0.05);
+}
+
+/* Card background effects */
+.card-gradient-urban {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid rgba(26, 155, 240, 0.1);
+}
+
+.card-gradient-food {
+  background: linear-gradient(135deg, #fef5ed 0%, #fde7d3 100%);
+  border: 1px solid rgba(242, 101, 24, 0.1);
+}
+
+.section-gradient-blue {
+  background: linear-gradient(180deg, white 0%, #f0f9ff 100%);
+}
+
+.section-gradient-orange {
+  background: linear-gradient(180deg, white 0%, #fef5ed 100%);
+}
