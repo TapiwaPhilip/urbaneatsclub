@@ -1,11 +1,11 @@
 "use client"
 
 import * as React from "react"
-import { ChevronRight, Menu, X } from "lucide-react"
-import { PanelLeft } from "lucide-react"
+import { ChevronRight, Menu, X, PanelLeft } from "lucide-react"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button-resolver"
+import Button from "@/components/ui/Button"
+import type { ButtonProps } from "@/components/ui/Button"
 import { Slot } from "@radix-ui/react-slot"
 import { useIsMobile } from "@/hooks/use-mobile"
 
@@ -158,7 +158,7 @@ Sidebar.displayName = "Sidebar"
 
 const SidebarTrigger = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement>
+  Omit<ButtonProps, 'ref'>
 >(({ className, ...props }, ref) => {
   const { setToggled, toggled } = useToggle()
 
@@ -240,7 +240,7 @@ SidebarHeaderActions.displayName = "SidebarHeaderActions"
 
 const SidebarCollapse = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement>
+  Omit<ButtonProps, 'ref'>
 >(({ className, ...props }, ref) => {
   const { collapsed, setCollapsed } = useSidebar()
 
@@ -396,7 +396,7 @@ SidebarMenuText.displayName = "SidebarMenuText"
 
 const SidebarMenuTrigger = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement>
+  Omit<ButtonProps, 'ref'>
 >(({ className, ...props }, ref) => {
   const { collapsed } = useSidebar()
 
@@ -547,9 +547,7 @@ SidebarMenuLinkText.displayName = "SidebarMenuLinkText"
 
 const SidebarMenuCollapse = React.forwardRef<
   HTMLButtonElement,
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    asChild?: boolean
-  }
+  Omit<ButtonProps, 'ref'>
 >(({ className, asChild = false, ...props }, ref) => {
   const { collapsed } = useSidebar()
   const Comp = asChild ? Slot : "button"
@@ -570,7 +568,7 @@ SidebarMenuCollapse.displayName = "SidebarMenuCollapse"
 
 const SidebarClose = React.forwardRef<
   HTMLButtonElement,
-  React.ComponentProps<typeof Button>
+  Omit<ButtonProps, 'ref'>
 >(({ className, ...props }, ref) => {
   const { setOpen } = useSidebar()
 

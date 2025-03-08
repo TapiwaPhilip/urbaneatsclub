@@ -3,7 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'accent' | 'ghost' | 'gradient';
   size?: 'sm' | 'md' | 'lg';
   withArrow?: boolean;
@@ -11,14 +11,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-const Button = ({
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   variant = 'primary',
   size = 'md',
   withArrow = false,
   className,
   children,
   ...props
-}: ButtonProps) => {
+}: ButtonProps, ref) => {
   const baseClasses = 'btn inline-flex items-center justify-center font-medium transition-all duration-200';
 
   const variantClasses = {
@@ -37,6 +37,7 @@ const Button = ({
 
   return (
     <button
+      ref={ref}
       className={cn(
         baseClasses,
         variantClasses[variant],
@@ -55,6 +56,8 @@ const Button = ({
       )}
     </button>
   );
-};
+});
+
+Button.displayName = "Button";
 
 export default Button;
