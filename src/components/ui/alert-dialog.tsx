@@ -3,7 +3,14 @@ import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/Button"
+
+// Since the current Button.tsx doesn't export buttonVariants, we'll create a simple variant pattern here
+const buttonVariants = (props: { variant?: "outline" } = {}) => {
+  return cn(
+    "inline-flex items-center justify-center font-medium transition-all duration-200",
+    props.variant === "outline" && "border border-slate-200 bg-transparent hover:bg-slate-100"
+  )
+}
 
 const AlertDialog = AlertDialogPrimitive.Root
 
