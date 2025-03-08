@@ -9,6 +9,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   withArrow?: boolean;
   className?: string;
   children: React.ReactNode;
+  asChild?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
@@ -17,6 +18,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   withArrow = false,
   className,
   children,
+  asChild = false,
   ...props
 }: ButtonProps, ref) => {
   const baseClasses = 'btn inline-flex items-center justify-center font-medium transition-all duration-200';
@@ -35,8 +37,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
     lg: 'btn-lg',
   };
 
+  // If asChild is true, use children as the component
+  const Comp = asChild ? React.Fragment : 'button';
+  
   return (
-    <button
+    <Comp
       ref={ref}
       className={cn(
         baseClasses,
@@ -54,7 +59,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
           aria-hidden="true"
         />
       )}
-    </button>
+    </Comp>
   );
 });
 

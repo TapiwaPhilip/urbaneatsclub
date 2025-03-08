@@ -547,13 +547,12 @@ SidebarMenuLinkText.displayName = "SidebarMenuLinkText"
 
 const SidebarMenuCollapse = React.forwardRef<
   HTMLButtonElement,
-  Omit<ButtonProps, 'ref'>
->(({ className, asChild = false, ...props }, ref) => {
+  Omit<ButtonProps, "ref">
+>(({ className, ...props }, ref) => {
   const { collapsed } = useSidebar()
-  const Comp = asChild ? Slot : "button"
 
   return (
-    <Comp
+    <Button
       ref={ref}
       className={cn(
         "group flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground",
