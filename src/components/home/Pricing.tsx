@@ -2,8 +2,11 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import Button from '@/components/ui/Button';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const Pricing = () => {
+  const { openCalendly } = useCalendly();
+
   return (
     <section id="pricing" className="section">
       <div className="container-custom">
@@ -38,7 +41,7 @@ const Pricing = () => {
               </ul>
             </div>
             
-            <Button variant="secondary" size="lg" className="w-full">
+            <Button variant="secondary" size="lg" className="w-full" onClick={openCalendly}>
               Choose Standard
             </Button>
           </div>
@@ -71,7 +74,7 @@ const Pricing = () => {
               </ul>
             </div>
             
-            <Button variant="primary" size="lg" className="w-full">
+            <Button variant="primary" size="lg" className="w-full" onClick={openCalendly}>
               Choose Premium
             </Button>
           </div>
@@ -98,7 +101,7 @@ const Pricing = () => {
               </ul>
             </div>
             
-            <Button variant="secondary" size="lg" className="w-full">
+            <Button variant="secondary" size="lg" className="w-full" onClick={openCalendly}>
               Choose Executive
             </Button>
           </div>
@@ -110,7 +113,7 @@ const Pricing = () => {
               <h3 className="text-xl font-semibold mb-2">Need a custom solution?</h3>
               <p className="text-slate-600">We offer tailored plans for enterprises with specific requirements.</p>
             </div>
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" onClick={openCalendly}>
               Contact Sales
             </Button>
           </div>

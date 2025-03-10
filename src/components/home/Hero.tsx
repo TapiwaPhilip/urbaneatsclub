@@ -2,8 +2,10 @@
 import React, { useEffect, useRef } from 'react';
 import Button from '@/components/ui/Button';
 import AnimatedImage from '@/components/ui/AnimatedImage';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const Hero = () => {
+  const { openCalendly } = useCalendly();
   const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -56,10 +58,10 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="lg" withArrow>
+              <Button variant="primary" size="lg" withArrow onClick={openCalendly}>
                 Get Started
               </Button>
-              <Button variant="secondary" size="lg">
+              <Button variant="secondary" size="lg" onClick={openCalendly}>
                 Book a Demo
               </Button>
             </div>

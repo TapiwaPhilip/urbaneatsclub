@@ -9,9 +9,11 @@ import Benefits from '@/components/home/Benefits';
 import Pricing from '@/components/home/Pricing';
 import Testimonials from '@/components/home/Testimonials';
 import Button from '@/components/ui/Button';
-import AnimatedImage from '@/components/ui/AnimatedImage';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const Index = () => {
+  const { openCalendly } = useCalendly();
+
   // Add scroll reveal animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,10 +60,13 @@ const Index = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                  <Button variant="primary" size="lg">
+                  <Button variant="primary" size="lg" onClick={openCalendly}>
                     Schedule a Demo
                   </Button>
-                  <Button variant="secondary" size="lg">
+                  <Button variant="secondary" size="lg" onClick={() => {
+                    const pricingSection = document.getElementById('pricing');
+                    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}>
                     View Pricing Plans
                   </Button>
                 </div>
@@ -84,7 +89,10 @@ const Index = () => {
                 <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
                   <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
                   
-                  <form className="space-y-4">
+                  <form className="space-y-4" onSubmit={(e) => {
+                    e.preventDefault();
+                    openCalendly();
+                  }}>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1">
@@ -95,6 +103,7 @@ const Index = () => {
                           id="firstName"
                           className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-urban-500 focus:border-urban-500"
                           placeholder="John"
+                          required
                         />
                       </div>
                       <div>
@@ -106,6 +115,7 @@ const Index = () => {
                           id="lastName"
                           className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-urban-500 focus:border-urban-500"
                           placeholder="Doe"
+                          required
                         />
                       </div>
                     </div>
@@ -119,6 +129,7 @@ const Index = () => {
                         id="email"
                         className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-urban-500 focus:border-urban-500"
                         placeholder="john@company.com"
+                        required
                       />
                     </div>
                     
@@ -131,6 +142,7 @@ const Index = () => {
                         id="company"
                         className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-urban-500 focus:border-urban-500"
                         placeholder="Your Company, Inc."
+                        required
                       />
                     </div>
                     
@@ -146,7 +158,7 @@ const Index = () => {
                       ></textarea>
                     </div>
                     
-                    <Button variant="primary" size="lg" className="w-full">
+                    <Button variant="primary" size="lg" className="w-full" type="submit">
                       Submit Request
                     </Button>
                   </form>

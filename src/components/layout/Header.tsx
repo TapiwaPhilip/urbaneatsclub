@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { openCalendly } = useCalendly();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +24,11 @@ const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const handleGetStarted = () => {
+    closeMenu();
+    openCalendly();
+  };
 
   return (
     <header
@@ -46,9 +53,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <a href="#contact" className="hidden md:inline-flex btn btn-primary btn-md">
+            <button 
+              onClick={handleGetStarted}
+              className="hidden md:inline-flex btn btn-primary btn-md"
+            >
               Get Started
-            </a>
+            </button>
 
             <button
               className="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
@@ -98,13 +108,12 @@ const Header = () => {
           </nav>
 
           <div className="mt-auto">
-            <a
-              href="#contact"
+            <button
               className="w-full btn btn-primary btn-lg text-center"
-              onClick={closeMenu}
+              onClick={handleGetStarted}
             >
               Get Started
-            </a>
+            </button>
           </div>
         </div>
       </div>
