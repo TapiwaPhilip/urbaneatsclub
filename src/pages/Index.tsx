@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
@@ -37,6 +38,30 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Helmet>
+        <title>Urban Eats Club - Office Lunch Program for Employers | Boost Workplace Culture</title>
+        <meta name="description" content="Urban Eats Club offers a seamless lunch benefits program that boosts office attendance and employee satisfaction. Increase productivity with our flexible employee lunch solution." />
+        <meta name="keywords" content="employee lunch benefits, office lunch program, corporate lunch solutions, workplace meals, employee perks" />
+        <link rel="canonical" href="https://urbaneatsclub.com/" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Urban Eats Club",
+              "url": "https://urbaneatsclub.com",
+              "logo": "https://urbaneatsclub.com/logo.png",
+              "description": "Urban Eats Club offers a seamless lunch benefits program that boosts office attendance and employee satisfaction.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-555-123-4567",
+                "contactType": "customer service"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+      
       <Header />
       
       <main>
