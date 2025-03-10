@@ -1,25 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  MapPin, 
-  Mail, 
-  Phone, 
-  Instagram, 
-  Twitter, 
-  Linkedin, 
-  Facebook 
-} from 'lucide-react';
-
+import { MapPin, Mail, Phone, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 const Footer = () => {
-  return (
-    <footer className="bg-slate-50 pt-16 pb-8">
+  return <footer className="bg-slate-50 pt-16 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <span className="text-2xl font-bold font-display text-urban-600">
-                Urban<span className="text-food-500">Eats</span>
+              <span className="text-2xl font-bold font-display text-slate-950">
+                Urban<span className="text-blue-400">Eats</span>
               </span>
             </Link>
             <p className="text-slate-600 mb-6 max-w-md">
@@ -95,32 +84,28 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
-const FooterLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
-  return (
-    <li>
-      <a 
-        href={href} 
-        className="text-slate-600 hover:text-urban-600 transition-colors"
-      >
+const FooterLink = ({
+  href,
+  children
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => {
+  return <li>
+      <a href={href} className="text-slate-600 hover:text-urban-600 transition-colors">
         {children}
       </a>
-    </li>
-  );
+    </li>;
 };
-
-const SocialIcon = ({ icon: Icon }: { icon: React.ElementType }) => {
-  return (
-    <a 
-      href="#" 
-      className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:text-urban-600 hover:border-urban-300 transition-colors"
-    >
+const SocialIcon = ({
+  icon: Icon
+}: {
+  icon: React.ElementType;
+}) => {
+  return <a href="#" className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:text-urban-600 hover:border-urban-300 transition-colors">
       <Icon size={20} />
-    </a>
-  );
+    </a>;
 };
-
 export default Footer;
