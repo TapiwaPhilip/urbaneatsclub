@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import useIsMobile from '@/hooks/use-mobile';
@@ -20,11 +21,11 @@ const Header = () => {
   const { openCalendly } = useCalendly();
 
   const links: NavLink[] = [
-    { id: 'features', label: t('nav.features') },
+    // Removed 'features' link
     { id: 'how-it-works', label: t('nav.howItWorks') },
     { id: 'benefits', label: t('nav.benefits') },
     { id: 'pricing', label: t('nav.pricing') },
-    { id: 'contact', label: t('nav.contact') },
+    // Removed 'contact' link
   ];
 
   useEffect(() => {
