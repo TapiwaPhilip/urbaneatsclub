@@ -3,8 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import Button from '@/components/ui/Button';
 import AnimatedImage from '@/components/ui/AnimatedImage';
 import { useCalendly } from '@/contexts/CalendlyContext';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
   const { openCalendly } = useCalendly();
   const imageRef = useRef<HTMLDivElement>(null);
 
@@ -46,23 +48,22 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 text-center lg:text-left animate-fade-in">
             <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-urban-50 text-urban-600 font-medium text-sm">
-              The Lunch Revolution for Employers
+              {t('hero.tagline')}
             </div>
             <h1 className="mb-6">
-              There <em>is</em> a Thing Called
-              <span className="text-gradient block mt-2">Free Lunch</span>
+              {t('hero.title1')}<em>{t('hero.titleEm')}</em>{t('hero.title2')}
+              <span className="text-gradient block mt-2">{t('hero.titleGradient')}</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Boost office attendance and employee satisfaction with a seamless lunch program.
-              Urban Eats Club makes employee lunch perks simple, flexible, and effective.
+              {t('hero.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
               <Button variant="primary" size="lg" withArrow onClick={openCalendly}>
-                Get Started
+                {t('hero.getStarted')}
               </Button>
               <Button variant="secondary" size="lg" onClick={openCalendly}>
-                Book a Demo
+                {t('hero.bookDemo')}
               </Button>
             </div>
 
@@ -94,8 +95,8 @@ const Hero = () => {
                 </div>
               </div>
               <div>
-                <span className="text-slate-800 font-medium">500+ companies</span>
-                <p className="text-sm text-slate-500">trust Urban Eats Club</p>
+                <span className="text-slate-800 font-medium">{t('hero.companies')}</span>
+                <p className="text-sm text-slate-500">{t('hero.trustText')}</p>
               </div>
             </div>
           </div>

@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "The Lunch Revolution for Employers",
+    "title1": "There ",
+    "titleEm": "is",
+    "title2": " a Thing Called",
+    "titleGradient": "Free Lunch",
+    "description": "Boost office attendance and employee satisfaction with a seamless lunch program. Urban Eats Club makes employee lunch perks simple, flexible, and effective.",
+    "getStarted": "Get Started",
+    "bookDemo": "Book a Demo",
+    "companies": "500+ companies",
+    "trustText": "trust Urban Eats Club"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "features": {
+    "title": "Features",
+    "heading": "Simplify Lunch Benefits",
+    "description": "Our platform makes managing employee lunch programs effortless with powerful features designed for both companies and employees."
+  },
+  "benefits": {
+    "title": "Benefits",
+    "heading": "Why Companies Choose Urban Eats Club",
+    "description": "Investing in employee lunches delivers substantial returns for your business beyond simply providing meals."
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "heading": "Simple, Streamlined Process",
+    "description": "Getting started with Urban Eats Club is easy for both companies and employees. Our seamless onboarding ensures you can start enjoying the benefits right away."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "heading": "Flexible Plans for Every Company",
+    "description": "Choose the right plan for your team's needs. All plans include our core platform features with different lunch credit allocations.",
+    "standard": {
+      "title": "Standard Plan",
+      "subtitle": "For small teams getting started",
+      "price": "€10",
+      "perEmployee": "/employee/day",
+      "checkIns": "2 check-ins per week",
+      "includes": "Plan includes:",
+      "features": [
+        "Access to standard-priced restaurants (€0-€10)",
+        "Basic reporting and analytics",
+        "Team coordination features",
+        "Standard customer support"
+      ],
+      "button": "Choose Standard"
+    },
+    "premium": {
+      "title": "Premium Plan",
+      "subtitle": "Perfect for growing companies",
+      "price": "€14",
+      "perEmployee": "/employee/day",
+      "checkIns": "3 check-ins per week",
+      "includes": "Everything in Standard, plus:",
+      "popular": "MOST POPULAR",
+      "features": [
+        "Access to mid-level restaurants (€10-€14)",
+        "Advanced reporting and analytics",
+        "Group ordering capabilities",
+        "Priority customer support",
+        "HR system integration"
+      ],
+      "button": "Choose Premium"
+    },
+    "executive": {
+      "title": "Executive Plan",
+      "subtitle": "For enterprise-level benefits",
+      "price": "€20",
+      "perEmployee": "/employee/day",
+      "checkIns": "5 check-ins per week",
+      "includes": "Everything in Premium, plus:",
+      "features": [
+        "Access to high-end restaurants (€14-€20)",
+        "Custom reporting and dedicated dashboard",
+        "Complete accounting software integration",
+        "Dedicated account manager",
+        "Custom branding options"
+      ],
+      "button": "Choose Executive"
+    },
+    "custom": {
+      "title": "Need a custom solution?",
+      "description": "We offer tailored plans for enterprises with specific requirements.",
+      "button": "Contact Sales"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "heading": "What Our Customers Say",
+    "description": "Discover how Urban Eats Club has transformed company culture and employee satisfaction for businesses of all sizes.",
+    "trustedBy": "Trusted by 500+ companies worldwide"
+  },
+  "contact": {
+    "ready": "Ready to Get Started?",
+    "title": "Transform Your Office Culture Today",
+    "description": "Join 500+ forward-thinking companies using Urban Eats Club to boost employee satisfaction and office attendance. Schedule a demo to see how our platform can work for your team.",
+    "scheduleDemo": "Schedule a Demo",
+    "viewPlans": "View Pricing Plans",
+    "noCreditCard": "No credit card required",
+    "freeTrial": "Free 14-day trial",
+    "getInTouch": "Get in Touch",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "workEmail": "Work Email",
+    "company": "Company",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Submit Request"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "return": "Return to Home"
+  }
+}

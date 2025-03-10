@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "İşverenler İçin Öğle Yemeği Devrimi",
+    "title1": "Gerçekten de ",
+    "titleEm": "ücretsiz",
+    "title2": " denilen bir şey",
+    "titleGradient": "Öğle Yemeği Var",
+    "description": "Sorunsuz bir öğle yemeği programı ile ofis katılımını ve çalışan memnuniyetini artırın. Urban Eats Club, çalışan öğle yemeği avantajlarını basit, esnek ve etkili hale getirir.",
+    "getStarted": "Başlayın",
+    "bookDemo": "Demo Rezervasyonu",
+    "companies": "500'den fazla şirket",
+    "trustText": "Urban Eats Club'a güveniyor"
+  },
+  "nav": {
+    "features": "Özellikler",
+    "howItWorks": "Nasıl Çalışır",
+    "benefits": "Faydalar",
+    "pricing": "Fiyatlandırma",
+    "contact": "İletişim"
+  },
+  "features": {
+    "title": "Özellikler",
+    "heading": "Öğle Yemeği Avantajlarını Basitleştirin",
+    "description": "Platformumuz, hem şirketler hem de çalışanlar için tasarlanmış güçlü özelliklerle çalışan öğle yemeği programlarını yönetmeyi zahmetsiz hale getirir."
+  },
+  "benefits": {
+    "title": "Faydalar",
+    "heading": "Şirketler Neden Urban Eats Club'u Seçiyor",
+    "description": "Çalışan öğle yemeklerine yatırım yapmak, sadece yemek sağlamanın ötesinde işletmenize önemli getiriler sağlar."
+  },
+  "howItWorks": {
+    "title": "Nasıl Çalışır",
+    "heading": "Basit, Akıcı Süreç",
+    "description": "Urban Eats Club ile başlamak hem şirketler hem de çalışanlar için kolaydır. Sorunsuz başlangıç sürecimiz, avantajlardan hemen yararlanmaya başlamanızı sağlar."
+  },
+  "pricing": {
+    "title": "Fiyatlandırma",
+    "heading": "Her Şirket İçin Esnek Planlar",
+    "description": "Ekibinizin ihtiyaçları için doğru planı seçin. Tüm planlar, farklı öğle yemeği kredisi tahsisatlarıyla temel platform özelliklerimizi içerir.",
+    "standard": {
+      "title": "Standart Plan",
+      "subtitle": "Yeni başlayan küçük ekipler için",
+      "price": "€10",
+      "perEmployee": "/çalışan/gün",
+      "checkIns": "Haftada 2 öğle yemeği",
+      "includes": "Plan şunları içerir:",
+      "features": [
+        "Standart fiyatlı restoranlara erişim (€0-€10)",
+        "Temel raporlama ve analitik",
+        "Ekip koordinasyon özellikleri",
+        "Standart müşteri desteği"
+      ],
+      "button": "Standart'ı Seçin"
+    },
+    "premium": {
+      "title": "Premium Plan",
+      "subtitle": "Büyüyen şirketler için mükemmel",
+      "price": "€14",
+      "perEmployee": "/çalışan/gün",
+      "checkIns": "Haftada 3 öğle yemeği",
+      "includes": "Standart'taki her şey, artı:",
+      "popular": "EN POPÜLER",
+      "features": [
+        "Orta seviye restoranlara erişim (€10-€14)",
+        "Gelişmiş raporlama ve analitik",
+        "Grup sipariş yetenekleri",
+        "Öncelikli müşteri desteği",
+        "İK sistemi entegrasyonu"
+      ],
+      "button": "Premium'u Seçin"
+    },
+    "executive": {
+      "title": "Yönetici Planı",
+      "subtitle": "Kurumsal düzeyde avantajlar için",
+      "price": "€20",
+      "perEmployee": "/çalışan/gün",
+      "checkIns": "Haftada 5 öğle yemeği",
+      "includes": "Premium'daki her şey, artı:",
+      "features": [
+        "Üst düzey restoranlara erişim (€14-€20)",
+        "Özel raporlama ve özel gösterge paneli",
+        "Tam muhasebe yazılımı entegrasyonu",
+        "Özel hesap yöneticisi",
+        "Özel markalama seçenekleri"
+      ],
+      "button": "Yönetici Planını Seçin"
+    },
+    "custom": {
+      "title": "Özel bir çözüme mi ihtiyacınız var?",
+      "description": "Belirli gereksinimleri olan işletmeler için özel planlar sunuyoruz.",
+      "button": "Satış ile İletişime Geçin"
+    }
+  },
+  "testimonials": {
+    "title": "Referanslar",
+    "heading": "Müşterilerimiz Ne Diyor",
+    "description": "Urban Eats Club'ın her boyuttaki işletme için şirket kültürünü ve çalışan memnuniyetini nasıl dönüştürdüğünü keşfedin.",
+    "trustedBy": "Dünya çapında 500'den fazla şirket tarafından güvenilmektedir"
+  },
+  "contact": {
+    "ready": "Başlamaya hazır mısınız?",
+    "title": "Ofis Kültürünüzü Bugün Dönüştürün",
+    "description": "Çalışan memnuniyetini ve ofis katılımını artırmak için Urban Eats Club kullanan 500'den fazla ilerici şirkete katılın. Platformumuzun ekibiniz için nasıl çalışabileceğini görmek için bir demo planlayın.",
+    "scheduleDemo": "Demo Planlayın",
+    "viewPlans": "Fiyatlandırma Planlarını Görüntüleyin",
+    "noCreditCard": "Kredi kartı gerekmiyor",
+    "freeTrial": "14 günlük ücretsiz deneme",
+    "getInTouch": "İletişime Geçin",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "workEmail": "İş E-postası",
+    "company": "Şirket",
+    "message": "Mesaj",
+    "messagePlaceholder": "Size nasıl yardımcı olabiliriz?",
+    "submit": "Talebi Gönder"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Hata! Sayfa bulunamadı",
+    "return": "Ana Sayfaya Dön"
+  }
+}

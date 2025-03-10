@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "为雇主提供的午餐革命",
+    "title1": "确实",
+    "titleEm": "存在",
+    "title2": "这样的东西：",
+    "titleGradient": "免费午餐",
+    "description": "通过无缝的午餐计划提高办公室出勤率和员工满意度。Urban Eats Club使员工午餐福利变得简单、灵活和有效。",
+    "getStarted": "开始使用",
+    "bookDemo": "预约演示",
+    "companies": "超过500家公司",
+    "trustText": "信赖Urban Eats Club"
+  },
+  "nav": {
+    "features": "功能",
+    "howItWorks": "工作原理",
+    "benefits": "优势",
+    "pricing": "价格",
+    "contact": "联系我们"
+  },
+  "features": {
+    "title": "功能",
+    "heading": "简化午餐福利",
+    "description": "我们的平台使管理员工午餐计划变得毫不费力，具有为公司和员工设计的强大功能。"
+  },
+  "benefits": {
+    "title": "优势",
+    "heading": "公司选择Urban Eats Club的原因",
+    "description": "投资员工午餐不仅仅是提供餐食，还能为您的业务带来巨大回报。"
+  },
+  "howItWorks": {
+    "title": "工作原理",
+    "heading": "简单、流畅的流程",
+    "description": "对公司和员工来说，开始使用Urban Eats Club都很简单。我们的无缝入职确保您可以立即开始享受福利。"
+  },
+  "pricing": {
+    "title": "价格",
+    "heading": "适合每个公司的灵活计划",
+    "description": "为您的团队需求选择合适的计划。所有计划都包括我们的核心平台功能，具有不同的午餐额度分配。",
+    "standard": {
+      "title": "标准计划",
+      "subtitle": "适合起步的小型团队",
+      "price": "€10",
+      "perEmployee": "/员工/天",
+      "checkIns": "每周2次午餐",
+      "includes": "计划包括：",
+      "features": [
+        "访问标准价格餐厅（€0-€10）",
+        "基本报告和分析",
+        "团队协调功能",
+        "标准客户支持"
+      ],
+      "button": "选择标准计划"
+    },
+    "premium": {
+      "title": "高级计划",
+      "subtitle": "适合成长中的公司",
+      "price": "€14",
+      "perEmployee": "/员工/天",
+      "checkIns": "每周3次午餐",
+      "includes": "标准计划的所有内容，以及：",
+      "popular": "最受欢迎",
+      "features": [
+        "访问中档餐厅（€10-€14）",
+        "高级报告和分析",
+        "团体订餐功能",
+        "优先客户支持",
+        "人力资源系统集成"
+      ],
+      "button": "选择高级计划"
+    },
+    "executive": {
+      "title": "行政计划",
+      "subtitle": "适合企业级福利",
+      "price": "€20",
+      "perEmployee": "/员工/天",
+      "checkIns": "每周5次午餐",
+      "includes": "高级计划的所有内容，以及：",
+      "features": [
+        "访问高端餐厅（€14-€20）",
+        "自定义报告和专用仪表板",
+        "完整的会计软件集成",
+        "专属客户经理",
+        "自定义品牌选项"
+      ],
+      "button": "选择行政计划"
+    },
+    "custom": {
+      "title": "需要定制解决方案？",
+      "description": "我们为具有特定需求的企业提供量身定制的计划。",
+      "button": "联系销售"
+    }
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "heading": "客户怎么说",
+    "description": "了解Urban Eats Club如何为各种规模的企业改变公司文化和提高员工满意度。",
+    "trustedBy": "全球超过500家公司信赖"
+  },
+  "contact": {
+    "ready": "准备开始了吗？",
+    "title": "今天就改变您的办公室文化",
+    "description": "加入500多家使用Urban Eats Club提高员工满意度和办公室出勤率的前瞻性公司。安排演示，了解我们的平台如何为您的团队服务。",
+    "scheduleDemo": "安排演示",
+    "viewPlans": "查看价格计划",
+    "noCreditCard": "无需信用卡",
+    "freeTrial": "14天免费试用",
+    "getInTouch": "联系我们",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "workEmail": "工作邮箱",
+    "company": "公司",
+    "message": "留言",
+    "messagePlaceholder": "我们如何帮助您？",
+    "submit": "提交请求"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "哎呀！找不到页面",
+    "return": "返回首页"
+  }
+}

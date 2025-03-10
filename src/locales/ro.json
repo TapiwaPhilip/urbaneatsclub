@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "Revoluția prânzului pentru angajatori",
+    "title1": "Există ",
+    "titleEm": "într-adevăr",
+    "title2": " un lucru numit",
+    "titleGradient": "Prânz Gratuit",
+    "description": "Creșteți prezența la birou și satisfacția angajaților cu un program de prânz fără probleme. Urban Eats Club face beneficiile de prânz pentru angajați simple, flexibile și eficiente.",
+    "getStarted": "Începeți",
+    "bookDemo": "Programați o demonstrație",
+    "companies": "Peste 500 de companii",
+    "trustText": "au încredere în Urban Eats Club"
+  },
+  "nav": {
+    "features": "Caracteristici",
+    "howItWorks": "Cum funcționează",
+    "benefits": "Beneficii",
+    "pricing": "Prețuri",
+    "contact": "Contact"
+  },
+  "features": {
+    "title": "Caracteristici",
+    "heading": "Simplificați beneficiile de prânz",
+    "description": "Platforma noastră face gestionarea programelor de prânz pentru angajați fără efort, cu funcții puternice concepute atât pentru companii, cât și pentru angajați."
+  },
+  "benefits": {
+    "title": "Beneficii",
+    "heading": "De ce companiile aleg Urban Eats Club",
+    "description": "Investiția în prânzurile angajaților oferă returnări substanțiale pentru afacerea dvs., dincolo de simpla furnizare de mese."
+  },
+  "howItWorks": {
+    "title": "Cum funcționează",
+    "heading": "Proces simplu și eficient",
+    "description": "Începerea cu Urban Eats Club este ușoară atât pentru companii, cât și pentru angajați. Procesul nostru de integrare fără probleme vă asigură că puteți începe să vă bucurați de beneficii imediat."
+  },
+  "pricing": {
+    "title": "Prețuri",
+    "heading": "Planuri flexibile pentru fiecare companie",
+    "description": "Alegeți planul potrivit pentru nevoile echipei dvs. Toate planurile includ funcțiile principale ale platformei noastre cu diferite alocări de credite pentru prânz.",
+    "standard": {
+      "title": "Plan Standard",
+      "subtitle": "Pentru echipe mici care încep",
+      "price": "€10",
+      "perEmployee": "/angajat/zi",
+      "checkIns": "2 prânzuri pe săptămână",
+      "includes": "Planul include:",
+      "features": [
+        "Acces la restaurante cu prețuri standard (€0-€10)",
+        "Raportare și analize de bază",
+        "Funcții de coordonare a echipei",
+        "Asistență pentru clienți standard"
+      ],
+      "button": "Alegeți Standard"
+    },
+    "premium": {
+      "title": "Plan Premium",
+      "subtitle": "Perfect pentru companiile în creștere",
+      "price": "€14",
+      "perEmployee": "/angajat/zi",
+      "checkIns": "3 prânzuri pe săptămână",
+      "includes": "Tot ce este în Standard, plus:",
+      "popular": "CEL MAI POPULAR",
+      "features": [
+        "Acces la restaurante de nivel mediu (€10-€14)",
+        "Raportare și analize avansate",
+        "Capacități de comandă în grup",
+        "Asistență pentru clienți prioritară",
+        "Integrare cu sistemul HR"
+      ],
+      "button": "Alegeți Premium"
+    },
+    "executive": {
+      "title": "Plan Executiv",
+      "subtitle": "Pentru beneficii la nivel de întreprindere",
+      "price": "€20",
+      "perEmployee": "/angajat/zi",
+      "checkIns": "5 prânzuri pe săptămână",
+      "includes": "Tot ce este în Premium, plus:",
+      "features": [
+        "Acces la restaurante de lux (€14-€20)",
+        "Raportare personalizată și tablou de bord dedicat",
+        "Integrare completă cu software-ul de contabilitate",
+        "Manager de cont dedicat",
+        "Opțiuni de branding personalizate"
+      ],
+      "button": "Alegeți Executiv"
+    },
+    "custom": {
+      "title": "Aveți nevoie de o soluție personalizată?",
+      "description": "Oferim planuri personalizate pentru întreprinderile cu cerințe specifice.",
+      "button": "Contactați Vânzările"
+    }
+  },
+  "testimonials": {
+    "title": "Testimoniale",
+    "heading": "Ce spun clienții noștri",
+    "description": "Descoperiți cum Urban Eats Club a transformat cultura companiei și satisfacția angajaților pentru afaceri de toate dimensiunile.",
+    "trustedBy": "De încredere de peste 500 de companii din întreaga lume"
+  },
+  "contact": {
+    "ready": "Gata să începeți?",
+    "title": "Transformați cultura de birou astăzi",
+    "description": "Alăturați-vă celor peste 500 de companii inovatoare care utilizează Urban Eats Club pentru a crește satisfacția angajaților și prezența la birou. Programați o demonstrație pentru a vedea cum platforma noastră poate funcționa pentru echipa dvs.",
+    "scheduleDemo": "Programați o demonstrație",
+    "viewPlans": "Vedeți planurile de prețuri",
+    "noCreditCard": "Nu este necesară nicio carte de credit",
+    "freeTrial": "Probă gratuită de 14 zile",
+    "getInTouch": "Luați legătura",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "workEmail": "Email de serviciu",
+    "company": "Companie",
+    "message": "Mesaj",
+    "messagePlaceholder": "Cum vă putem ajuta?",
+    "submit": "Trimiteți cererea"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Ups! Pagina nu a fost găsită",
+    "return": "Înapoi la pagina principală"
+  }
+}

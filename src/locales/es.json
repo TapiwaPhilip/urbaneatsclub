@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "La revolución del almuerzo para empleadores",
+    "title1": "Sí ",
+    "titleEm": "existe",
+    "title2": " algo llamado",
+    "titleGradient": "Almuerzo Gratis",
+    "description": "Aumente la asistencia a la oficina y la satisfacción de los empleados con un programa de almuerzo sin complicaciones. Urban Eats Club hace que los beneficios de almuerzo para empleados sean simples, flexibles y efectivos.",
+    "getStarted": "Comenzar",
+    "bookDemo": "Reservar una demo",
+    "companies": "Más de 500 empresas",
+    "trustText": "confían en Urban Eats Club"
+  },
+  "nav": {
+    "features": "Características",
+    "howItWorks": "Cómo funciona",
+    "benefits": "Beneficios",
+    "pricing": "Precios",
+    "contact": "Contacto"
+  },
+  "features": {
+    "title": "Características",
+    "heading": "Simplifique los beneficios de almuerzo",
+    "description": "Nuestra plataforma facilita la gestión de programas de almuerzo para empleados con potentes funciones diseñadas tanto para empresas como para empleados."
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "heading": "Por qué las empresas eligen Urban Eats Club",
+    "description": "Invertir en almuerzos para empleados ofrece retornos sustanciales para su negocio más allá de simplemente proporcionar comidas."
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "heading": "Proceso simple y optimizado",
+    "description": "Comenzar con Urban Eats Club es fácil tanto para empresas como para empleados. Nuestra incorporación sin problemas garantiza que pueda comenzar a disfrutar de los beneficios de inmediato."
+  },
+  "pricing": {
+    "title": "Precios",
+    "heading": "Planes flexibles para cada empresa",
+    "description": "Elija el plan adecuado para las necesidades de su equipo. Todos los planes incluyen nuestras funciones principales de la plataforma con diferentes asignaciones de créditos para almuerzo.",
+    "standard": {
+      "title": "Plan Estándar",
+      "subtitle": "Para equipos pequeños que están comenzando",
+      "price": "€10",
+      "perEmployee": "/empleado/día",
+      "checkIns": "2 almuerzos por semana",
+      "includes": "El plan incluye:",
+      "features": [
+        "Acceso a restaurantes de precio estándar (€0-€10)",
+        "Informes y análisis básicos",
+        "Funciones de coordinación de equipo",
+        "Soporte al cliente estándar"
+      ],
+      "button": "Elegir Estándar"
+    },
+    "premium": {
+      "title": "Plan Premium",
+      "subtitle": "Perfecto para empresas en crecimiento",
+      "price": "€14",
+      "perEmployee": "/empleado/día",
+      "checkIns": "3 almuerzos por semana",
+      "includes": "Todo lo del plan Estándar, más:",
+      "popular": "MÁS POPULAR",
+      "features": [
+        "Acceso a restaurantes de nivel medio (€10-€14)",
+        "Informes y análisis avanzados",
+        "Capacidades de pedido en grupo",
+        "Soporte al cliente prioritario",
+        "Integración con sistemas de RRHH"
+      ],
+      "button": "Elegir Premium"
+    },
+    "executive": {
+      "title": "Plan Ejecutivo",
+      "subtitle": "Para beneficios a nivel empresarial",
+      "price": "€20",
+      "perEmployee": "/empleado/día",
+      "checkIns": "5 almuerzos por semana",
+      "includes": "Todo lo del plan Premium, más:",
+      "features": [
+        "Acceso a restaurantes de alta gama (€14-€20)",
+        "Informes personalizados y panel dedicado",
+        "Integración completa con software contable",
+        "Gerente de cuenta dedicado",
+        "Opciones de marca personalizadas"
+      ],
+      "button": "Elegir Ejecutivo"
+    },
+    "custom": {
+      "title": "¿Necesita una solución personalizada?",
+      "description": "Ofrecemos planes a medida para empresas con requisitos específicos.",
+      "button": "Contactar con ventas"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "heading": "Lo que dicen nuestros clientes",
+    "description": "Descubra cómo Urban Eats Club ha transformado la cultura empresarial y la satisfacción de los empleados para empresas de todos los tamaños.",
+    "trustedBy": "Confiado por más de 500 empresas en todo el mundo"
+  },
+  "contact": {
+    "ready": "¿Listo para comenzar?",
+    "title": "Transforme su cultura de oficina hoy",
+    "description": "Únase a más de 500 empresas innovadoras que utilizan Urban Eats Club para aumentar la satisfacción de los empleados y la asistencia a la oficina. Programe una demo para ver cómo nuestra plataforma puede funcionar para su equipo.",
+    "scheduleDemo": "Programar una demo",
+    "viewPlans": "Ver planes de precios",
+    "noCreditCard": "No se requiere tarjeta de crédito",
+    "freeTrial": "Prueba gratuita de 14 días",
+    "getInTouch": "Contactar con nosotros",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "workEmail": "Email de trabajo",
+    "company": "Empresa",
+    "message": "Mensaje",
+    "messagePlaceholder": "¿Cómo podemos ayudarle?",
+    "submit": "Enviar solicitud"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "¡Ups! Página no encontrada",
+    "return": "Volver al inicio"
+  }
+}

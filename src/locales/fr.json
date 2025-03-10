@@ -1,0 +1,123 @@
+
+{
+  "hero": {
+    "tagline": "La révolution du déjeuner pour les employeurs",
+    "title1": "Il ",
+    "titleEm": "existe",
+    "title2": " vraiment un",
+    "titleGradient": "Déjeuner Gratuit",
+    "description": "Augmentez la présence au bureau et la satisfaction des employés avec un programme de déjeuner transparent. Urban Eats Club rend les avantages du déjeuner des employés simples, flexibles et efficaces.",
+    "getStarted": "Commencer",
+    "bookDemo": "Réserver une démo",
+    "companies": "Plus de 500 entreprises",
+    "trustText": "font confiance à Urban Eats Club"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "benefits": "Avantages",
+    "pricing": "Tarifs",
+    "contact": "Contact"
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "heading": "Simplifiez les avantages du déjeuner",
+    "description": "Notre plateforme facilite la gestion des programmes de déjeuner des employés avec des fonctionnalités puissantes conçues pour les entreprises et les employés."
+  },
+  "benefits": {
+    "title": "Avantages",
+    "heading": "Pourquoi les entreprises choisissent Urban Eats Club",
+    "description": "Investir dans les déjeuners des employés offre des rendements substantiels pour votre entreprise au-delà de la simple fourniture de repas."
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "heading": "Processus simple et rationalisé",
+    "description": "Commencer avec Urban Eats Club est facile tant pour les entreprises que pour les employés. Notre intégration transparente vous permet de profiter immédiatement des avantages."
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "heading": "Des plans flexibles pour chaque entreprise",
+    "description": "Choisissez le bon plan pour les besoins de votre équipe. Tous les plans incluent nos fonctionnalités de base avec différentes allocations de crédits déjeuner.",
+    "standard": {
+      "title": "Plan Standard",
+      "subtitle": "Pour les petites équipes qui débutent",
+      "price": "€10",
+      "perEmployee": "/employé/jour",
+      "checkIns": "2 déjeuners par semaine",
+      "includes": "Le plan comprend :",
+      "features": [
+        "Accès aux restaurants à prix standard (€0-€10)",
+        "Rapports et analyses de base",
+        "Fonctionnalités de coordination d'équipe",
+        "Support client standard"
+      ],
+      "button": "Choisir Standard"
+    },
+    "premium": {
+      "title": "Plan Premium",
+      "subtitle": "Parfait pour les entreprises en croissance",
+      "price": "€14",
+      "perEmployee": "/employé/jour",
+      "checkIns": "3 déjeuners par semaine",
+      "includes": "Tout ce qui est dans Standard, plus :",
+      "popular": "LE PLUS POPULAIRE",
+      "features": [
+        "Accès aux restaurants de niveau intermédiaire (€10-€14)",
+        "Rapports et analyses avancés",
+        "Capacités de commande de groupe",
+        "Support client prioritaire",
+        "Intégration au système RH"
+      ],
+      "button": "Choisir Premium"
+    },
+    "executive": {
+      "title": "Plan Exécutif",
+      "subtitle": "Pour des avantages de niveau entreprise",
+      "price": "€20",
+      "perEmployee": "/employé/jour",
+      "checkIns": "5 déjeuners par semaine",
+      "includes": "Tout ce qui est dans Premium, plus :",
+      "features": [
+        "Accès aux restaurants haut de gamme (€14-€20)",
+        "Rapports personnalisés et tableau de bord dédié",
+        "Intégration complète du logiciel comptable",
+        "Gestionnaire de compte dédié",
+        "Options de marque personnalisée"
+      ],
+      "button": "Choisir Exécutif"
+    },
+    "custom": {
+      "title": "Besoin d'une solution personnalisée ?",
+      "description": "Nous proposons des plans adaptés pour les entreprises ayant des besoins spécifiques.",
+      "button": "Contacter les ventes"
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "heading": "Ce que disent nos clients",
+    "description": "Découvrez comment Urban Eats Club a transformé la culture d'entreprise et la satisfaction des employés pour des entreprises de toutes tailles.",
+    "trustedBy": "Utilisé par plus de 500 entreprises dans le monde"
+  },
+  "contact": {
+    "ready": "Prêt à commencer ?",
+    "title": "Transformez votre culture de bureau aujourd'hui",
+    "description": "Rejoignez plus de 500 entreprises avant-gardistes utilisant Urban Eats Club pour augmenter la satisfaction des employés et la présence au bureau. Planifiez une démo pour voir comment notre plateforme peut fonctionner pour votre équipe.",
+    "scheduleDemo": "Planifier une démo",
+    "viewPlans": "Voir les forfaits",
+    "noCreditCard": "Pas de carte de crédit requise",
+    "freeTrial": "Essai gratuit de 14 jours",
+    "getInTouch": "Contactez-nous",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "workEmail": "Email professionnel",
+    "company": "Entreprise",
+    "message": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "submit": "Envoyer la demande"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oups ! Page non trouvée",
+    "return": "Retour à l'accueil"
+  }
+}
