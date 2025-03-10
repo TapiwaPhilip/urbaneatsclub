@@ -5,3 +5,13 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://urbaneatsclub.com/sitemap.xml
+
+# Google-specific crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Specify crawl delay
+Crawl-delay: 10
