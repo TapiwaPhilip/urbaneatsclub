@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
-import { useMediaQuery } from '@/hooks/use-mobile';
+import { Menu, X } from 'lucide-react';
+import useIsMobile from '@/hooks/use-mobile';
 import Button from '@/components/ui/Button';
 import { useCalendly } from '@/contexts/CalendlyContext';
 import { Link as ScrollLink } from 'react-scroll';
@@ -17,7 +16,7 @@ const Header = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 1024px)');
+  const isMobile = useIsMobile();
   const { openCalendly } = useCalendly();
 
   const links: NavLink[] = [
@@ -95,7 +94,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobile && mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-200 shadow-lg py-4 animate-slide-down">
           <div className="container-custom">
