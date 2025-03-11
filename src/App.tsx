@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { CalendlyProvider } from "./contexts/CalendlyContext";
 import LanguageProvider from "./contexts/LanguageContext";
+import { AudioProvider } from "./contexts/AudioContext";
 
 const queryClient = new QueryClient();
 
@@ -16,19 +17,21 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
       <LanguageProvider>
-        <TooltipProvider>
-          <CalendlyProvider>
-            <Toaster />
-            <Sonner />
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </BrowserRouter>
-          </CalendlyProvider>
-        </TooltipProvider>
+        <AudioProvider>
+          <TooltipProvider>
+            <CalendlyProvider>
+              <Toaster />
+              <Sonner />
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </BrowserRouter>
+            </CalendlyProvider>
+          </TooltipProvider>
+        </AudioProvider>
       </LanguageProvider>
     </HelmetProvider>
   </QueryClientProvider>

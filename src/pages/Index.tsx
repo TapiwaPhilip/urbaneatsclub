@@ -11,6 +11,7 @@ import Pricing from '@/components/home/Pricing';
 import Testimonials from '@/components/home/Testimonials';
 import Button from '@/components/ui/Button';
 import { useCalendly } from '@/contexts/CalendlyContext';
+import BackgroundMusic from '@/components/ui/BackgroundMusic';
 
 const Index = () => {
   const { openCalendly } = useCalendly();
@@ -63,6 +64,7 @@ const Index = () => {
       </Helmet>
       
       <Header />
+      <BackgroundMusic src="/ambient-music.mp3" />
       
       <main>
         <Hero />
