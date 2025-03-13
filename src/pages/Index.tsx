@@ -50,7 +50,7 @@ const Index = () => {
               "@type": "Organization",
               "name": "Urban Eats Club",
               "url": "https://urbaneatsclub.com",
-              "logo": "/lovable-uploads/f3b5c459-1be2-4e90-86e9-3dce4f3d8ec0.png",
+              "logo": "/lovable-uploads/9ccd2f66-3358-48c0-beb8-dcbfd399ac22.png",
               "description": "Urban Eats Club offers a seamless lunch benefits program that boosts office attendance and employee satisfaction.",
               "contactPoint": {
                 "@type": "ContactPoint",
