@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { User, Briefcase, GraduationCap } from 'lucide-react';
-import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
 
 // Import new components
 import SurveyHeader from './survey/SurveyHeader';
@@ -30,6 +29,19 @@ const ageDemographicData = [
   { name: '36-45', value: 55 },
   { name: '46-55', value: 20 },
   { name: '56+', value: 10 },
+];
+
+const industryBreakdownData = [
+  { name: 'Technology', value: 35, color: '#3b82f6' },
+  { name: 'Finance', value: 25, color: '#10b981' },
+  { name: 'Healthcare', value: 20, color: '#f59e0b' },
+  { name: 'Other Sectors', value: 20, color: '#8b5cf6' }
+];
+
+const educationLevelData = [
+  { name: 'University Degree', value: 65, color: '#3b82f6' },
+  { name: 'Vocational Training', value: 25, color: '#10b981' },
+  { name: 'High School', value: 10, color: '#f59e0b' }
 ];
 
 const SurveyResults = () => {
@@ -61,28 +73,9 @@ const SurveyResults = () => {
           iconColor="text-urban-600" 
           iconBgColor="bg-urban-100"
           borderColor="border-t-urban-500"
-        >
-          <div className="h-[150px]">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie
-                  data={genderDemographicData}
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={60}
-                  fill="#8884d8"
-                  dataKey="value"
-                  label={({ name, percent }) => `${(percent * 100).toFixed(0)}%`}
-                >
-                  {genderDemographicData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
-                  ))}
-                </Pie>
-                <Tooltip />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
-        </DemographicCard>
+          variant="pie-chart"
+          data={genderDemographicData}
+        />
         
         <DemographicCard 
           title="Industry Breakdown" 
@@ -91,26 +84,9 @@ const SurveyResults = () => {
           iconColor="text-food-600" 
           iconBgColor="bg-food-100"
           borderColor="border-t-food-500"
-        >
-          <ul className="space-y-2 mt-4">
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">Technology</span>
-              <span className="font-medium">35%</span>
-            </li>
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">Finance</span>
-              <span className="font-medium">25%</span>
-            </li>
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">Healthcare</span>
-              <span className="font-medium">20%</span>
-            </li>
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">Other Sectors</span>
-              <span className="font-medium">20%</span>
-            </li>
-          </ul>
-        </DemographicCard>
+          variant="list"
+          data={industryBreakdownData}
+        />
         
         <DemographicCard 
           title="Education Level" 
@@ -119,22 +95,9 @@ const SurveyResults = () => {
           iconColor="text-urban-600" 
           iconBgColor="bg-urban-100"
           borderColor="border-t-urban-500"
-        >
-          <ul className="space-y-2 mt-4">
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">University Degree</span>
-              <span className="font-medium">65%</span>
-            </li>
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">Vocational Training</span>
-              <span className="font-medium">25%</span>
-            </li>
-            <li className="flex justify-between items-center">
-              <span className="text-slate-700">High School</span>
-              <span className="font-medium">10%</span>
-            </li>
-          </ul>
-        </DemographicCard>
+          variant="list"
+          data={educationLevelData}
+        />
       </div>
       
       <KeyTakeaways />
