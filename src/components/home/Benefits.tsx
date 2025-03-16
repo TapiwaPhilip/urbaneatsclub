@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   HeartHandshake, 
@@ -10,6 +9,7 @@ import {
 } from 'lucide-react';
 import AnimatedImage from '@/components/ui/AnimatedImage';
 import Button from '@/components/ui/Button';
+import { Link } from 'react-router-dom';
 
 const Benefits = () => {
   return (
@@ -110,9 +110,11 @@ const Benefits = () => {
                 </div>
               </div>
               
-              <Button variant="primary" size="lg">
-                Read Full Case Study
-              </Button>
+              <Link to="/case-study">
+                <Button variant="primary" size="lg">
+                  Read Full Case Study
+                </Button>
+              </Link>
             </div>
             
             <div className="relative lg:h-auto overflow-hidden">
