@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import ChartContext, { useChart } from "./ChartContext"
 import ChartStyle from "./ChartStyle"
 import ChartTooltipContent from "./ChartTooltipContent"
+import ChartTooltipItem from "./ChartTooltipItem"
 import ChartLegendContent from "./ChartLegendContent"
 import { ChartConfig } from "./types"
 
@@ -48,6 +49,7 @@ export {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
+  ChartTooltipItem,
   ChartLegend,
   ChartLegendContent,
   ChartStyle,
