@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Mail, Phone, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+
 const Footer = () => {
   return <footer className="bg-slate-50 pt-16 pb-8">
       <div className="container-custom">
@@ -35,10 +37,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
+              <FooterLink href="/case-study">Case Studies</FooterLink>
               <FooterLink href="#">Help Center</FooterLink>
               <FooterLink href="#">API Documentation</FooterLink>
               <FooterLink href="#">Blog</FooterLink>
-              <FooterLink href="#">Case Studies</FooterLink>
             </ul>
           </div>
           
@@ -86,6 +88,7 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 const FooterLink = ({
   href,
   children
@@ -99,6 +102,7 @@ const FooterLink = ({
       </a>
     </li>;
 };
+
 const SocialIcon = ({
   icon: Icon
 }: {
@@ -108,4 +112,5 @@ const SocialIcon = ({
       <Icon size={20} />
     </a>;
 };
+
 export default Footer;
