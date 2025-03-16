@@ -8,6 +8,13 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CaseStudy from "./pages/CaseStudy";
+import HelpCenter from "./pages/HelpCenter";
+import ApiDocs from "./pages/ApiDocs";
+import Blog from "./pages/Blog";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiesPolicy from "./pages/CookiesPolicy";
+import Imprint from "./pages/Imprint";
 import { CalendlyProvider } from "./contexts/CalendlyContext";
 import LanguageProvider from "./contexts/LanguageContext";
 
@@ -25,6 +32,13 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/case-study" element={<CaseStudy />} />
+                <Route path="/help-center" element={<HelpCenter />} />
+                <Route path="/api-docs" element={<ApiDocs />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="/cookies-policy" element={<CookiesPolicy />} />
+                <Route path="/imprint" element={<Imprint />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
