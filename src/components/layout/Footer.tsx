@@ -74,16 +74,16 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Urban Eats Club. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link to="/privacy-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              <Link to="/privacy-policy" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Privacy Policy
               </Link>
-              <Link to="/terms-of-service" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              <Link to="/terms-of-service" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Terms of Service
               </Link>
-              <Link to="/cookies-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              <Link to="/cookies-policy" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Cookies
               </Link>
-              <Link to="/imprint" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              <Link to="/imprint" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Imprint
               </Link>
             </div>
