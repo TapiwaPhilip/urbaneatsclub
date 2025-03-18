@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { MapPin, Mail, Phone, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
+  // Get the base URL of the application
+  const baseUrl = window.location.origin;
+  
   return (
     <footer className="bg-slate-50 pt-16 pb-8">
       <div className="container-custom">
@@ -74,18 +77,18 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Urban Eats Club. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link to="/privacy-policy" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
+              <a href={`${baseUrl}/privacy-policy`} className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Privacy Policy
-              </Link>
-              <Link to="/terms-of-service" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
+              </a>
+              <a href={`${baseUrl}/terms-of-service`} className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Terms of Service
-              </Link>
-              <Link to="/cookies-policy" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
+              </a>
+              <a href={`${baseUrl}/cookies-policy`} className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Cookies
-              </Link>
-              <Link to="/imprint" className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
+              </a>
+              <a href={`${baseUrl}/imprint`} className="text-sm text-slate-600 hover:text-urban-600 transition-colors font-medium">
                 Imprint
-              </Link>
+              </a>
             </div>
           </div>
         </div>
