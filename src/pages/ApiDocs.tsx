@@ -91,7 +91,6 @@ const order = await response.json();`;
                     language="javascript"
                     theme={dracula}
                     showLineNumbers={true}
-                    wrapLines={true}
                   />
                 </div>
               </div>
@@ -109,7 +108,6 @@ const order = await response.json();`;
                     language="javascript"
                     theme={dracula}
                     showLineNumbers={true}
-                    wrapLines={true}
                   />
                 </div>
               </div>
@@ -127,7 +125,6 @@ const order = await response.json();`;
                     language="javascript"
                     theme={dracula}
                     showLineNumbers={true}
-                    wrapLines={true}
                   />
                 </div>
               </div>
