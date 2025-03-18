@@ -4,29 +4,30 @@ import { Link } from 'react-router-dom';
 import { MapPin, Mail, Phone, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
-  return <footer className="bg-slate-50 pt-16 pb-8">
+  return (
+    <footer className="bg-slate-50 pt-16 pb-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
               <span className="text-2xl font-bold font-display text-slate-950">
-                Urban<span className="text-blue-400">Eats</span>
+                Urban<span className="text-urban-500">Eats</span>
               </span>
             </Link>
-            <p className="text-slate-600 mb-6 max-w-md">
+            <p className="text-slate-600 mb-6 max-w-md leading-relaxed text-base">
               Helping companies offer lunch experiences that boost employee satisfaction and office attendance. There is a thing called free lunch.
             </p>
             <div className="flex space-x-4">
-              <SocialIcon icon={Instagram} />
-              <SocialIcon icon={Twitter} />
-              <SocialIcon icon={Linkedin} />
-              <SocialIcon icon={Facebook} />
+              <SocialIcon icon={Instagram} aria-label="Instagram" />
+              <SocialIcon icon={Twitter} aria-label="Twitter" />
+              <SocialIcon icon={Linkedin} aria-label="LinkedIn" />
+              <SocialIcon icon={Facebook} aria-label="Facebook" />
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Product</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold mb-5 text-slate-800 font-display">Product</h4>
+            <ul className="space-y-3">
               <FooterLink href="#features">Features</FooterLink>
               <FooterLink href="#pricing">Pricing</FooterLink>
               <FooterLink href="#benefits">Benefits</FooterLink>
@@ -35,8 +36,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold mb-5 text-slate-800 font-display">Resources</h4>
+            <ul className="space-y-3">
               <FooterLink href="/case-study">Case Studies</FooterLink>
               <FooterLink href="/help-center">Help Center</FooterLink>
               <FooterLink href="/api-docs">API Documentation</FooterLink>
@@ -45,21 +46,21 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3">
+            <h4 className="text-lg font-semibold mb-5 text-slate-800 font-display">Contact</h4>
+            <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-urban-500 mr-3 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-600">123 Market St, San Francisco, CA 94103</span>
+                <span className="text-slate-600 text-sm">123 Market St, San Francisco, CA 94103</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-urban-500 mr-3 flex-shrink-0" />
-                <a href="mailto:info@urbaneats.club" className="text-slate-600 hover:text-urban-600 transition-colors">
+                <a href="mailto:info@urbaneats.club" className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
                   info@urbaneats.club
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-urban-500 mr-3 flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-slate-600 hover:text-urban-600 transition-colors">
+                <a href="tel:+15551234567" className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
                   +1 (555) 123-4567
                 </a>
               </li>
@@ -72,7 +73,7 @@ const Footer = () => {
             <p className="text-slate-500 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Urban Eats Club. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap gap-6">
               <Link to="/privacy-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
                 Privacy Policy
               </Link>
@@ -89,7 +90,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 
 const FooterLink = ({
@@ -99,22 +101,31 @@ const FooterLink = ({
   href: string;
   children: React.ReactNode;
 }) => {
-  return <li>
-      <Link to={href} className="text-slate-600 hover:text-urban-600 transition-colors">
+  return (
+    <li>
+      <Link to={href} className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
         {children}
       </Link>
-    </li>;
+    </li>
+  );
 };
 
 const SocialIcon = ({
-  icon: Icon
+  icon: Icon,
+  'aria-label': ariaLabel
 }: {
   icon: React.ElementType;
+  'aria-label'?: string;
 }) => {
-  return <a href="#" className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:text-urban-600 hover:border-urban-300 transition-colors">
+  return (
+    <a 
+      href="#" 
+      className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:text-urban-600 hover:border-urban-300 hover:shadow-sm transition-all"
+      aria-label={ariaLabel}
+    >
       <Icon size={20} />
-    </a>;
+    </a>
+  );
 };
 
 export default Footer;
-
