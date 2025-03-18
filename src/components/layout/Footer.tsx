@@ -31,20 +31,20 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-5 text-slate-800 font-display">Product</h4>
             <ul className="space-y-3">
-              <FooterLink href="#features">Features</FooterLink>
-              <FooterLink href="#pricing">Pricing</FooterLink>
-              <FooterLink href="#benefits">Benefits</FooterLink>
-              <FooterLink href="#testimonials">Testimonials</FooterLink>
+              <FooterHashLink href="#features">Features</FooterHashLink>
+              <FooterHashLink href="#pricing">Pricing</FooterHashLink>
+              <FooterHashLink href="#benefits">Benefits</FooterHashLink>
+              <FooterHashLink href="#testimonials">Testimonials</FooterHashLink>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-5 text-slate-800 font-display">Resources</h4>
             <ul className="space-y-3">
-              <FooterLink href="/case-study">Case Studies</FooterLink>
-              <FooterLink href="/help-center">Help Center</FooterLink>
-              <FooterLink href="/api-docs">API Documentation</FooterLink>
-              <FooterLink href="/blog">Blog</FooterLink>
+              <FooterPageLink href="/case-study">Case Studies</FooterPageLink>
+              <FooterPageLink href="/help-center">Help Center</FooterPageLink>
+              <FooterPageLink href="/api-docs">API Documentation</FooterPageLink>
+              <FooterPageLink href="/blog">Blog</FooterPageLink>
             </ul>
           </div>
           
@@ -97,7 +97,8 @@ const Footer = () => {
   );
 };
 
-const FooterLink = ({
+// For hash-based links (on the same page)
+const FooterHashLink = ({
   href,
   children
 }: {
@@ -106,9 +107,27 @@ const FooterLink = ({
 }) => {
   return (
     <li>
-      <Link to={href} className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
+      <a href={href} className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
         {children}
-      </Link>
+      </a>
+    </li>
+  );
+};
+
+// For page links that need the baseUrl
+const FooterPageLink = ({
+  href,
+  children
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => {
+  const baseUrl = window.location.origin;
+  return (
+    <li>
+      <a href={`${baseUrl}${href}`} className="text-slate-600 hover:text-urban-600 transition-colors text-sm">
+        {children}
+      </a>
     </li>
   );
 };
