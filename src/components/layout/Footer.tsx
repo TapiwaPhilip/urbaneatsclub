@@ -73,18 +73,18 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Urban Eats Club. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="/privacy-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              <Link to="/privacy-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms-of-service" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
                 Terms of Service
-              </a>
-              <a href="/cookies-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              </Link>
+              <Link to="/cookies-policy" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
                 Cookies
-              </a>
-              <a href="/imprint" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
+              </Link>
+              <Link to="/imprint" className="text-sm text-slate-500 hover:text-urban-600 transition-colors">
                 Imprint
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -100,9 +100,9 @@ const FooterLink = ({
   children: React.ReactNode;
 }) => {
   return <li>
-      <a href={href} className="text-slate-600 hover:text-urban-600 transition-colors">
+      <Link to={href} className="text-slate-600 hover:text-urban-600 transition-colors">
         {children}
-      </a>
+      </Link>
     </li>;
 };
 
@@ -117,3 +117,4 @@ const SocialIcon = ({
 };
 
 export default Footer;
+
